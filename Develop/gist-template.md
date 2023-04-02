@@ -49,25 +49,19 @@ In the example above are covered by the following:
 
 - + : This matches the pattern one or more times
 
-
-### OR Operator
-
 ### Character Classes
-
-### Flags
+In the example above \d is a character class. This enables a match to numbers between 0-9. This is also an example of a meta character. Character classes allow for distinction between different types of characters e.g. the difference between letters and numbers.
 
 ### Grouping and Capturing
+Grouping allows the regex to be split into smaller expressions for matching. Groups are typically defined using parentheses. 
 
+In our example above we have 3 groups:
+    1. ([a-z0-9_\.-]+): checks for username
+    2. ([\da-z\.-]+): checks email provider e.g. yahoo or google
+    3. ([a-z\.]{2,6}): this checks the .com portion of the email address
 
-
-### Greedy and Lazy Match
-
-### Boundaries
-
-### Back-references
-
-### Look-ahead and Look-behind
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+https://github.com/tmalenga
+
