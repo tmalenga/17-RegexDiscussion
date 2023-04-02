@@ -38,9 +38,16 @@ An example of a search pattern containing a literal character would be if we wer
 An example of a meta character is the example in the summary. A extract of a meta character from the email validation is "a-z0-9". This will seacrh the user input for all the characters between a - z and numbers between 0 - 9. This allows for an expansion of the search range.
 
 ### Bracket Expressions
+The data inside the square brackets allows us to search for a range of data. In the example above "[a-z0-9_\.-]", this allows the program to msearch and match characters between a - z, 0 - 9 and also incorporate special characters. If however the parameters in the brackets were [xyz], this would only search for those specific characters, i.e. x, y and z.
 
 ### Quantifiers
+Quantifiers allow allow for the programmers to set limits/ specify the search range that the regex covers. 
 
+In the example above are covered by the following:
+
+- {2,6}: This matches the pattern a minimum of 2 times and a maximum of 6 times.
+
+- + : This matches the pattern one or more times
 
 
 ### OR Operator
